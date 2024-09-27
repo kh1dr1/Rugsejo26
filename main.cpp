@@ -64,6 +64,17 @@ float digit_div(int digit_1, int digit_2)
     return static_cast<float>(digit_1) / static_cast<float>(digit_2);
 }
 
+// 5-as uzduotis
+void find_max(int a, int b)
+{
+    if (a > b)
+        cout << "1-as skaicius didesnis\n";
+    else if (a < b)
+        cout << "2-as skaicius didesnis\n";
+    else
+        cout << "Skaiciai yra lygus (" << a << " = " << b << ")\n";
+}
+
 int main()
 {
     cout << "Uzduotis 1:\n";
@@ -77,7 +88,7 @@ int main()
     cout << "\nUzduotis 3:\n";
     for (int i = 0; i < 10; ++i)
     {
-        cout << "Atsitiktinis skaicius #" << i + 1 << " yra: " << random_number(0, 20) << '\n';
+        cout << "Atsitiktinis skaicius #" << i + 1 << " yra: " << random_number(0, 100) << '\n';
     }
 
     cout << "\nUzduotis 4:\n";
@@ -87,6 +98,13 @@ int main()
     cout << "Skaitmenu skirtumas: " << digit_diff(d1, d2) << '\n';
     cout << "Skaitmenu sandauga: " << digit_mul(d1, d2) << '\n';
     cout << "Skaitmenu dalmuo: " << digit_div(d1, d2) << '\n';
+
+    cout << "\nUzduotis 5:\n";
+    find_max(5, 4);
+    find_max(45, 43);
+    find_max(8, 19);
+    find_max(10, 10);
+    find_max(-1, 0);
 
     return 0;
 }
