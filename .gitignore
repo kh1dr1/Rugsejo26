@@ -1,6 +1,14 @@
-# Files to be ignored by Git
+# Exclude CLion IDE specific files
+.idea/
 
-# Binary
+# CMake build artifacts (for CLion IDE)
+cmake-build-*/
+
+# VS Code local settings
+.vscode/
+
+# Binaries
 *.exe
 *.obj
 *.o
+*.bin
