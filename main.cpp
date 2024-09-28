@@ -6,9 +6,9 @@ using namespace std;
 // 1-as uzduotis
 void student()
 {
-    cout << "Studento vardas: Ilia\n";
-    cout << "Studento studiju programa: Programu Sistemos\n";
-    cout << "Studento argumentas: \"Pasirinkau Programu Sistemu studiju programa, nes noreciau tapti programuotoju.\"\n";
+    cout << "Studento vardas: \"Ilia\"\n";
+    cout << "Studiju programa: \"Programu sistemos\"\n";
+    cout << "Kodel studentas pasirinko sia studiju programa? \"Jis nori tapti programuotoju.\"\n";
 }
 
 // 2-as uzduotis
@@ -68,11 +68,11 @@ float digit_div(int digit_1, int digit_2)
 void find_max(int a, int b)
 {
     if (a > b)
-        cout << "1-as skaicius didesnis\n";
+        cout << "Pirmas skaicius didesnis\n";
     else if (a < b)
-        cout << "2-as skaicius didesnis\n";
+        cout << "Antras skaicius didesnis\n";
     else
-        cout << "Skaiciai yra lygus (" << a << " = " << b << ")\n";
+        cout << "Skaiciai yra lygus\n";
 }
 
 int main()
@@ -88,7 +88,7 @@ int main()
     cout << "\nUzduotis 3:\n";
     for (int i = 0; i < 10; ++i)
     {
-        cout << "Atsitiktinis skaicius #" << i + 1 << " yra: " << random_number(0, 100) << '\n';
+        cout << "Atsitiktinis skaicius (0-100): " << random_number(0, 100) << '\n';
     }
 
     cout << "\nUzduotis 4:\n";
